@@ -84,9 +84,9 @@ class VideoTracker(object):
             cv2.putText(im, "FPS= "+str(int(1 / (end - start))), (0, 25), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
             print("time: {:.03f}s, fps: {:.03f}".format(end - start, 1 / (end - start)))
 
-            # if self.args.display:
+            if self.args.display:
                 # cv2_imshow(im)
-                # cv2.imshow("test", im)
+                cv2.imshow("test", im)
                 # if cv2.waitKey(1) == ord('q'):  # q to quit
                     # raise StopIteration
             
