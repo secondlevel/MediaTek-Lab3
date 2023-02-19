@@ -393,8 +393,8 @@ static void draw_objects(const cv::Mat& bgr, const std::vector<Object>& objects)
                     cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 0));
     }
 
-    cv::imshow("image", image);
-    cv::waitKey(0);
+//     cv::imshow("image", image);
+//     cv::waitKey(0);
 }
 
 int main(int argc, char** argv)
