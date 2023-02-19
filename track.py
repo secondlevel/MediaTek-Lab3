@@ -24,9 +24,9 @@ class VideoTracker(object):
         use_cuda = args.use_cuda and torch.cuda.is_available()
         if not use_cuda:
             raise UserWarning("Running in cpu mode!")
-        if args.display:
-            cv2.namedWindow("test", cv2.WINDOW_NORMAL)
-            cv2.resizeWindow("test", args.display_width, args.display_height)
+        # if args.display:
+            # cv2.namedWindow("test", cv2.WINDOW_NORMAL)
+            # cv2.resizeWindow("test", args.display_width, args.display_height)
 
         self.vdo = cv2.VideoCapture()
 
